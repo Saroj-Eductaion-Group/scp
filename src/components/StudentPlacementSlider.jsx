@@ -129,8 +129,8 @@ export default function PlacedStudents() {
 
                 <div className="flex items-center justify-between mt-6">
                   <div className="relative">
-                    <img
-                      src={student.photo}
+                     <img
+                      src={`${import.meta.env.BASE_URL}${student.photo}`}
                       alt={student.company}
                       className="w-28 h-28 object-cover rounded-full border-4 border-white shadow-md group-hover:border-blue-300 transition-all duration-300"
                     />

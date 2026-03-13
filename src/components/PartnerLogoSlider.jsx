@@ -64,11 +64,16 @@ export default function HiringPartnersSlider() {
                     whileHover={{ scale: 1.05 }}
                     className="bg-white p-5 rounded-lg shadow-sm hover:shadow-md transition-all w-full h-full flex items-center justify-center border border-gray-100"
                   >
-                    <img
+                    {/* <img
                       src={`scp/${company.src}`}
                       alt={company.name}
                       className="h-12 object-contain  transition-all duration-300"
                       loading="lazy"
+                    /> */}
+                    <img
+                      src={`${import.meta.env.BASE_URL}${company.src}`}
+                      alt={company.name}
+                       className="h-12 object-contain  transition-all duration-300"
                     />
                   </motion.div>
                   <p className="mt-3 text-sm font-medium text-gray-700 text-center">
